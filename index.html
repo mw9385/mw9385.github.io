@@ -7,9 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <style>
-        video.hover-media {
-            display: none; /* 기본적으로는 숨김 */
-            width: 100%;
+        /* 이미지 겹침 방지를 위한 컨테이너 설정 */
+        .one {
+            position: relative;
+            width: 200px; /* 이미지 너비와 동일하게 설정 */
+            height: auto;
+        }
+        .two {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            opacity: 0;
+            transition: opacity .2s ease-in-out;
+        }
+        /* 텍스트 가독성을 위한 설정 */
+        .papertitle {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -63,10 +77,10 @@
                     <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
                             <tr onmouseout="landing_stop()" onmouseover="landing_start()">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='landing_image'><img src='images/landing_hover.jpg' width=100%></div>
-                                        <img src='images/landing_base.jpg' width=100%>
+                                        <div class="two" id='landing_image'><img src='images/landing_hover.jpg' width="200"></div>
+                                        <img src='images/landing_base.jpg' width="200">
                                     </div>
                                     <script type="text/javascript">
                                         function landing_start() { document.getElementById('landing_image').style.opacity = "1"; }
@@ -74,7 +88,7 @@
                                         landing_stop()
                                     </script>
                                 </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                <td style="padding:8px;width:70%;vertical-align:middle">
                                     <a href="#"><span class="papertitle">Vision-Based Autonomous Drone Landing on Moving Platforms With Uncertain Motion via Deep Reinforcement Learning</span></a><br>
                                     Woojae Shin, <strong>Minwoo Kim</strong>, Taewook Park, Geunsik Bae, Seunghwan Kim, Hyondong Oh<br>
                                     <em>IEEE Robotics Automation Letters (RAL)</em>, 2026<br>
@@ -83,10 +97,10 @@
                             </tr>
 
                             <tr onmouseout="rapid_stop()" onmouseover="rapid_start()" bgcolor="#ffffd0">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='rapid_image'><img src='images/rapid_1.png' width=100%></div>
-                                        <img src='images/rapid_1.png' width=150%>
+                                        <div class="two" id='rapid_image'><img src='images/rapid_1.png' width="200"></div>
+                                        <img src='images/rapid_1.png' width="200">
                                     </div>
                                     <script type="text/javascript">
                                         function rapid_start() { document.getElementById('rapid_image').style.opacity = "1"; }
@@ -94,23 +108,22 @@
                                         rapid_stop()
                                     </script>
                                 </td>
-                                    <td style="padding:8px;width:80%;vertical-align:middle">
-                                        <a href="https://www.roboticsproceedings.org/rss21/p142.pdf" target="_blank">
-                                            <span class="papertitle">RAPID: Robust and Agile Planner Using Inverse Reinforcement Learning for Vision-Based Drone Navigation</span>
-                                        </a><br>
-                                        <strong>Minwoo Kim</strong>, Geunsik Bae, Jinwoo Lee, Woojae Shin, Changseung Kim, Myongyol Choi, Heejung Shin, Hyongdong Oh<br>
-                                        <em>Robotics Science and Systems (RSS)</em>, 2025<br>
-                                        
-                                        <a href="https://www.roboticsproceedings.org/rss21/p142.pdf" target="_blank">paper</a> / 
-                                        <a href="https://www.youtube.com/watch?v=7e7hANyI3qE&t=12s" target="_blank">video</a>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="https://www.roboticsproceedings.org/rss21/p142.pdf" target="_blank">
+                                        <span class="papertitle">RAPID: Robust and Agile Planner Using Inverse Reinforcement Learning for Vision-Based Drone Navigation</span>
+                                    </a><br>
+                                    <strong>Minwoo Kim</strong>, Geunsik Bae, Jinwoo Lee, Woojae Shin, Changseung Kim, Myongyol Choi, Heejung Shin, Hyongdong Oh<br>
+                                    <em>Robotics Science and Systems (RSS)</em>, 2025<br>
+                                    <a href="https://www.roboticsproceedings.org/rss21/p142.pdf" target="_blank">paper</a> / 
+                                    <a href="https://www.youtube.com/watch?v=7e7hANyI3qE&t=12s" target="_blank">video</a>
                                 </td>
                             </tr>
 
                             <tr onmouseout="flight_stop()" onmouseover="flight_start()">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='flight_image'><img src='images/flight_hover.jpg' width=100%></div>
-                                        <img src='images/flight_base.jpg' width=100%>
+                                        <div class="two" id='flight_image'><img src='images/flight_hover.jpg' width="200"></div>
+                                        <img src='images/flight_base.jpg' width="200">
                                     </div>
                                     <script type="text/javascript">
                                         function flight_start() { document.getElementById('flight_image').style.opacity = "1"; }
@@ -118,7 +131,7 @@
                                         flight_stop()
                                     </script>
                                 </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                <td style="padding:8px;width:70%;vertical-align:middle">
                                     <a href="#"><span class="papertitle">Towards monocular vision-based autonomous flight through deep reinforcement learning</span></a><br>
                                     <strong>Minwoo Kim</strong>, Jongyun Kim, Minjae Jung, Hyondong Oh<br>
                                     <em>Expert Systems with Applications</em>, 2022<br>
@@ -136,10 +149,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td style="padding:16px;width:20%;vertical-align:middle">
-                                    <img src='images/samsung_logo.png' style="width:100%; max-height:80px; object-fit: contain;">
+                                <td style="padding:16px;width:30%;vertical-align:middle; text-align:center;">
+                                    <img src='images/samsung_logo.png' width="200" style="max-height:80px; object-fit: contain;">
                                 </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                <td style="padding:8px;width:70%;vertical-align:middle">
                                     <p><strong>Staff Engineer</strong>, Samsung Research (Robot Intelligence Team) | 02/2025 - Present</p>
                                     <ul>
                                         <li>Hierarchical Vision-Language-Action (VLA) models for real robot manipulation.</li>
@@ -147,10 +160,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td style="padding:16px;width:20%;vertical-align:middle">
-                                    <img src='images/unist_logo.png' style="width:100%; max-height:80px; object-fit: contain;">
+                                <td style="padding:16px;width:30%;vertical-align:middle; text-align:center;">
+                                    <img src='images/unist_logo.png' width="200" style="max-height:80px; object-fit: contain;">
                                 </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                <td style="padding:8px;width:70%;vertical-align:middle">
                                     <p><strong>Graduate Researcher</strong>, Autonomous Systems Lab (ASL), UNIST | 03/2019 - 02/2025</p>
                                     <ul>
                                         <li>Focus: Learning-based visual navigation, drone landing on moving platforms.</li>
@@ -167,12 +180,11 @@
                                     <h2>Projects</h2>
                                 </td>
                             </tr>
-
                             <tr onmouseout="proj_nrf_stop()" onmouseover="proj_nrf_start()">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='proj_nrf_image'><img src='images/proj_nrf_hover.gif' width=100%></div>
-                                        <img src='images/proj_nrf_base.jpg' width=100%>
+                                        <div class="two" id='proj_nrf_image'><img src='images/proj_nrf_hover.gif' width="200"></div>
+                                        <img src='images/proj_nrf_base.jpg' width="200">
                                     </div>
                                     <script type="text/javascript">
                                         function proj_nrf_start() { document.getElementById('proj_nrf_image').style.opacity = "1"; }
@@ -180,77 +192,31 @@
                                         proj_nrf_stop()
                                     </script>
                                 </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                <td style="padding:8px;width:70%;vertical-align:middle">
                                     <span class="papertitle">Vision-Based Fast, Highly Reliable, and Agile Autonomous Drone Flight Using Deep Learning Approaches</span><br>
                                     Funded by National Research Fund (NRF) | 2023 - Present
                                     <p>Research on robust DRL for high-speed drone navigation in cluttered environments.</p>
                                 </td>
                             </tr>
 
-                            <tr onmouseout="proj_kari_stop()" onmouseover="proj_kari_start()">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
-                                    <div class="one">
-                                        <div class="two" id='proj_kari_image'><img src='images/proj_kari_hover.gif' width=100%></div>
-                                        <img src='images/proj_kari_base.jpg' width=100%>
-                                    </div>
-                                    <script type="text/javascript">
-                                        function proj_kari_start() { document.getElementById('proj_kari_image').style.opacity = "1"; }
-                                        function proj_kari_stop() { document.getElementById('proj_kari_image').style.opacity = "0"; }
-                                        proj_kari_stop()
-                                    </script>
-                                </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
-                                    <span class="papertitle">Advanced Vehicle Autonomy & Intelligence Technology Development for Unmanned Vehicles</span><br>
-                                    Funded by Korea Aerospace Research Institute (KARI) | 2020 - Present
-                                    <p>Developing core autonomy for advanced unmanned systems and UAVs.</p>
-                                </td>
-                            </tr>
-
                             <tr onmouseout="proj_add_land_stop()" onmouseover="proj_add_land_start()">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='proj_add_land_media'>
-                                            <img src='images/proj_add_land_hover.gif' width=100%>
-                                        </div>
-                                        <img src='images/proj_add_land_base.jpg' width=100%>
+                                        <div class="two" id='proj_add_land_media'><img src='images/proj_add_land_hover.gif' width="200"></div>
+                                        <img src='images/proj_add_land_base.jpg' width="200">
                                     </div>
                                     <script type="text/javascript">
-                                        function proj_add_land_start() { 
-                                            document.getElementById('proj_add_land_media').style.opacity = "1";
-                                            // 비디오라면 여기서 play()를 호출할 수 있습니다.
-                                        }
-                                        function proj_add_land_stop() { 
-                                            document.getElementById('proj_add_land_media').style.opacity = "0"; 
-                                        }
+                                        function proj_add_land_start() { document.getElementById('proj_add_land_media').style.opacity = "1"; }
+                                        function proj_add_land_stop() { document.getElementById('proj_add_land_media').style.opacity = "0"; }
                                         proj_add_land_stop()
                                     </script>
                                 </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                <td style="padding:8px;width:70%;vertical-align:middle">
                                     <span class="papertitle">State Estimation of a Moving Vehicle and Test Environment Development for Vision-Based Autonomous Landing of the UAV</span><br>
                                     Funded by Agency for Defense Development (ADD) | 2021 - 2023
                                     <p>Sim-to-real gap reduction for precise drone landing on moving, uncertain targets.</p>
                                 </td>
                             </tr>
-
-                            <tr onmouseout="proj_crane_stop()" onmouseover="proj_crane_start()">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
-                                    <div class="one">
-                                        <div class="two" id='proj_crane_image'><img src='images/proj_crane_hover.gif' width=100%></div>
-                                        <img src='images/proj_crane_base.jpg' width=100%>
-                                    </div>
-                                    <script type="text/javascript">
-                                        function proj_crane_start() { document.getElementById('proj_crane_image').style.opacity = "1"; }
-                                        function proj_crane_stop() { document.getElementById('proj_crane_image').style.opacity = "0"; }
-                                        proj_crane_stop()
-                                    </script>
-                                </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
-                                    <span class="papertitle">Smart Crane Object Detection System</span><br>
-                                    Funded by HD Hyundai Heavy Industry | 2023 - 2024
-                                    <p>Computer vision for safety-critical object detection in industrial heavy crane operations.</p>
-                                </td>
-                            </tr>
-
                         </tbody>
                     </table>
 
