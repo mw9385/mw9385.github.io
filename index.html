@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <style>
-        /* 이미지 겹침 방지를 위한 컨테이너 설정 */
         .one {
             position: relative;
             width: 200px;
@@ -32,23 +31,23 @@
         <tbody>
             <tr style="padding:0px">
                 <td style="padding:0px">
-                    
+
                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
                             <tr style="padding:0px">
                                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                                     <p class="name" style="text-align: center;">Minwoo Kim, Ph.D.</p>
                                     <p>
-                                        I'm a <strong>Staff Engineer</strong> at <a href="https://research.samsung.com/">Samsung Research</a> in the Robot Intelligence Team. 
-                                        My core expertise is rooted in vision-based navigation, reinforcement learning, and inverse reinforcement learning for autonomous mobile robots and UAVs. 
+                                        I'm a <strong>Staff Engineer</strong> at <a href="https://research.samsung.com/" target="_blank">Samsung Research</a> in the Robot Intelligence Team.
+                                        My core expertise is rooted in vision-based navigation, reinforcement learning, and inverse reinforcement learning for autonomous mobile robots and UAVs.
                                         Currently, I am actively engaged in pioneering research on <strong>Vision-Language-Action (VLA)</strong> models for real robot manipulation.
                                     </p>
                                     <p style="text-align:center">
                                         <a href="mailto:mwoo.kim@samsung.com">Email</a> &nbsp;/&nbsp;
                                         <a href="data/CV.pdf">CV</a> &nbsp;/&nbsp;
-                                        <a href="https://fair.kaist.ac.kr/">Website</a> &nbsp;/&nbsp;
-                                        <a href="https://github.com/mw9385">Github</a> &nbsp;/&nbsp;
-                                        <a href="https://www.linkedin.com/in/minwoo-kim-4a2468208/">LinkedIn</a>
+                                        <a href="https://fair.kaist.ac.kr/" target="_blank">Website</a> &nbsp;/&nbsp;
+                                        <a href="https://github.com/mw9385" target="_blank">Github</a> &nbsp;/&nbsp;
+                                        <a href="https://www.linkedin.com/in/minwoo-kim-4a2468208/" target="_blank">LinkedIn</a>
                                     </p>
                                 </td>
                                 <td style="padding:2.5%;width:37%;max-width:37%">
@@ -78,146 +77,206 @@
                             <tr onmouseout="landing_stop()" onmouseover="landing_start()">
                                 <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='landing_image'><img src='images/landing_hover.jpg' width="200"></div>
-                                        <img src='images/landing_base.jpg' width="200">
+                                        <div class="two" id="landing_image"><img src="images/landing_hover.jpg" width="200" alt=""></div>
+                                        <img src="images/landing_base.jpg" width="200" alt="">
                                     </div>
                                     <script type="text/javascript">
                                         function landing_start() { document.getElementById('landing_image').style.opacity = "1"; }
                                         function landing_stop() { document.getElementById('landing_image').style.opacity = "0"; }
-                                        landing_stop()
+                                        landing_stop();
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
-                                    <a href="#"><span class="papertitle">Vision-Based Autonomous Drone Landing on Moving Platforms With Uncertain Motion via Deep Reinforcement Learning</span></a><br>
+                                    <a href="https://doi.org/10.1109/LRA.2026.3674011" target="_blank">
+                                        <span class="papertitle">Vision-Based Autonomous Drone Landing on Moving Platforms With Uncertain Motion via Deep Reinforcement Learning</span>
+                                    </a><br>
                                     Woojae Shin, <strong>Minwoo Kim</strong>, Taewook Park, Geunsik Bae, Seunghwan Kim, Hyondong Oh<br>
-                                    <em>IEEE Robotics Automation Letters (RAL)</em>, 2026<br>
-                                    <a href="#">project page</a> / <a href="#">arXiv</a> / <a href="#">video</a>
+                                    <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2026<br>
+                                    <a href="https://doi.org/10.1109/LRA.2026.3674011" target="_blank">paper</a>
                                 </td>
                             </tr>
 
                             <tr onmouseout="rapid_stop()" onmouseover="rapid_start()" bgcolor="#ffffd0">
                                 <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='rapid_image'><img src='images/rapid_1.png' width="200"></div>
-                                        <img src='images/rapid_1.png' width="200">
+                                        <div class="two" id="rapid_image"><img src="images/rapid_1.png" width="200" alt=""></div>
+                                        <img src="images/rapid_1.png" width="200" alt="">
                                     </div>
                                     <script type="text/javascript">
                                         function rapid_start() { document.getElementById('rapid_image').style.opacity = "1"; }
                                         function rapid_stop() { document.getElementById('rapid_image').style.opacity = "0"; }
-                                        rapid_stop()
+                                        rapid_stop();
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
                                     <a href="https://www.roboticsproceedings.org/rss21/p142.pdf" target="_blank">
                                         <span class="papertitle">RAPID: Robust and Agile Planner Using Inverse Reinforcement Learning for Vision-Based Drone Navigation</span>
                                     </a><br>
-                                    <strong>Minwoo Kim</strong>, Geunsik Bae, Jinwoo Lee, Woojae Shin, Changseung Kim, Myongyol Choi, Heejung Shin, Hyongdong Oh<br>
-                                    <em>Robotics Science and Systems (RSS)</em>, 2025<br>
-                                    <a href="https://www.roboticsproceedings.org/rss21/p142.pdf" target="_blank">paper</a> / 
+                                    <strong>Minwoo Kim</strong>, Geunsik Bae, Jinwoo Lee, Woojae Shin, Changseung Kim, Myong-Yol Choi, Heejung Shin, Hyondong Oh<br>
+                                    <em>Robotics: Science and Systems (RSS)</em>, 2025<br>
+                                    <a href="https://www.roboticsproceedings.org/rss21/p142.pdf" target="_blank">paper</a> /
+                                    <a href="https://arxiv.org/abs/2502.02054" target="_blank">arXiv</a> /
                                     <a href="https://www.youtube.com/watch?v=7e7hANyI3qE&t=12s" target="_blank">video</a>
                                 </td>
                             </tr>
-                            
+
                             <tr onmouseout="swarm_stop()" onmouseover="swarm_start()">
                                 <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='swarm_image'><img src='images/swarm_hover.jpg' width="200"></div>
-                                        <img src='images/swarm_base.jpg' width="200">
+                                        <div class="two" id="swarm_image"><img src="images/swarm_hover.jpg" width="200" alt=""></div>
+                                        <img src="images/swarm_base.jpg" width="200" alt="">
                                     </div>
                                     <script type="text/javascript">
                                         function swarm_start() { document.getElementById('swarm_image').style.opacity = "1"; }
                                         function swarm_stop() { document.getElementById('swarm_image').style.opacity = "0"; }
-                                        swarm_stop()
+                                        swarm_stop();
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
-                                    <a href="#"><span class="papertitle">Collective navigation through a narrow gap for a swarm of UAVs using curriculum-based deep reinforcement learning</span></a><br>
+                                    <a href="https://doi.org/10.7746/jkros.2024.19.1.117" target="_blank">
+                                        <span class="papertitle">Collective navigation through a narrow gap for a swarm of UAVs using curriculum-based deep reinforcement learning</span>
+                                    </a><br>
                                     Myong-Yol Choi, Woojae Shin, <strong>Minwoo Kim</strong>, Hwi-Sung Park, Youngbin You, Min Lee, Hyondong Oh<br>
                                     <em>The Journal of Korea Robotics Society</em>, 2024<br>
-                                    <a href="#">paper</a>
+                                    <a href="https://doi.org/10.7746/jkros.2024.19.1.117" target="_blank">paper</a>
                                 </td>
                             </tr>
-                        
+
+                            <tr onmouseout="rssws_stop()" onmouseover="rssws_start()">
+                                <td style="padding:16px;width:30%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id="rssws_image"><img src="images/rssws_hover.jpg" width="200" alt=""></div>
+                                        <img src="images/rssws_base.jpg" width="200" alt="">
+                                    </div>
+                                    <script type="text/javascript">
+                                        function rssws_start() { document.getElementById('rssws_image').style.opacity = "1"; }
+                                        function rssws_stop() { document.getElementById('rssws_image').style.opacity = "0"; }
+                                        rssws_stop();
+                                    </script>
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="https://scholarworks.unist.ac.kr/handle/201301/66761" target="_blank">
+                                        <span class="papertitle">Learning From the Best: Inverse Imitation Learning for Agile Drone Flight</span>
+                                    </a><br>
+                                    <strong>Minwoo Kim</strong>, Geunsik Bae, Heejung Shin, Pawel Ladosz, Hyondong Oh<br>
+                                    <em>Workshop in Robotics: Science and Systems (RSS)</em>, 2023<br>
+                                    <a href="https://scholarworks.unist.ac.kr/handle/201301/66761" target="_blank">paper</a>
+                                </td>
+                            </tr>
+
                             <tr onmouseout="flight_stop()" onmouseover="flight_start()">
                                 <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='flight_image'><img src='images/flight_hover.jpg' width="200"></div>
-                                        <img src='images/flight_base.jpg' width="200">
+                                        <div class="two" id="flight_image"><img src="images/flight_hover.jpg" width="200" alt=""></div>
+                                        <img src="images/flight_base.jpg" width="200" alt="">
                                     </div>
                                     <script type="text/javascript">
                                         function flight_start() { document.getElementById('flight_image').style.opacity = "1"; }
                                         function flight_stop() { document.getElementById('flight_image').style.opacity = "0"; }
-                                        flight_stop()
+                                        flight_stop();
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
-                                    <a href="#"><span class="papertitle">Towards monocular vision-based autonomous flight through deep reinforcement learning</span></a><br>
+                                    <a href="https://doi.org/10.1016/j.eswa.2022.116742" target="_blank">
+                                        <span class="papertitle">Towards monocular vision-based autonomous flight through deep reinforcement learning</span>
+                                    </a><br>
                                     <strong>Minwoo Kim</strong>, Jongyun Kim, Minjae Jung, Hyondong Oh<br>
                                     <em>Expert Systems with Applications</em>, 2022<br>
-                                    <a href="#">paper</a> / <a href="#">code</a>
+                                    <a href="https://doi.org/10.1016/j.eswa.2022.116742" target="_blank">paper</a> /
+                                    <a href="https://github.com/mw9385/Collision-avoidance" target="_blank">code</a>
                                 </td>
                             </tr>
-                            
+
                             <tr onmouseout="ttc_stop()" onmouseover="ttc_start()">
                                 <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='ttc_image'><img src='images/ttc_hover.jpg' width="200"></div>
-                                        <img src='images/ttc_base.jpg' width="200">
+                                        <div class="two" id="ttc_image"><img src="images/ttc_hover.jpg" width="200" alt=""></div>
+                                        <img src="images/ttc_base.jpg" width="200" alt="">
                                     </div>
                                     <script type="text/javascript">
                                         function ttc_start() { document.getElementById('ttc_image').style.opacity = "1"; }
                                         function ttc_stop() { document.getElementById('ttc_image').style.opacity = "0"; }
-                                        ttc_stop()
+                                        ttc_stop();
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
-                                    <a href="#"><span class="papertitle">Monocular vision-based time-to-collision estimation for small drones by domain adaptation of simulated images</span></a><br>
+                                    <a href="https://doi.org/10.1016/j.eswa.2022.116973" target="_blank">
+                                        <span class="papertitle">Monocular vision-based time-to-collision estimation for small drones by domain adaptation of simulated images</span>
+                                    </a><br>
                                     <strong>Minwoo Kim</strong>, Pawel Ladosz, Hyondong Oh<br>
                                     <em>Expert Systems with Applications</em>, 2022<br>
-                                    <a href="#">paper</a>
+                                    <a href="https://doi.org/10.1016/j.eswa.2022.116973" target="_blank">paper</a> /
+                                    <a href="https://github.com/mw9385/Time-To-Collision-Estimation-Using-Domain-Adaptation" target="_blank">code</a>
                                 </td>
                             </tr>
-                            
+
                             <tr onmouseout="survey_stop()" onmouseover="survey_start()">
                                 <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='survey_image'><img src='images/survey_hover.jpg' width="200"></div>
-                                        <img src='images/survey_base.jpg' width="200">
+                                        <div class="two" id="survey_image"><img src="images/survey_hover.jpg" width="200" alt=""></div>
+                                        <img src="images/survey_base.jpg" width="200" alt="">
                                     </div>
                                     <script type="text/javascript">
                                         function survey_start() { document.getElementById('survey_image').style.opacity = "1"; }
                                         function survey_stop() { document.getElementById('survey_image').style.opacity = "0"; }
-                                        survey_stop()
+                                        survey_stop();
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
-                                    <a href="#"><span class="papertitle">Exploration in deep reinforcement learning: a survey</span></a><br>
+                                    <a href="https://doi.org/10.1016/j.inffus.2022.03.003" target="_blank">
+                                        <span class="papertitle">Exploration in deep reinforcement learning: a survey</span>
+                                    </a><br>
                                     Pawel Ladosz, Lilian Weng, <strong>Minwoo Kim</strong>, Hyondong Oh<br>
                                     <em>Information Fusion</em>, 2022<br>
-                                    <a href="#">paper</a> / <a href="#">arXiv</a>
+                                    <a href="https://doi.org/10.1016/j.inffus.2022.03.003" target="_blank">paper</a> /
+                                    <a href="https://arxiv.org/abs/2205.00824" target="_blank">arXiv</a>
                                 </td>
                             </tr>
-                            
+
                             <tr onmouseout="rita_stop()" onmouseover="rita_start()">
                                 <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='rita_image'><img src='images/rita_hover.jpg' width="200"></div>
-                                        <img src='images/rita_base.jpg' width="200">
+                                        <div class="two" id="rita_image"><img src="images/rita_hover.jpg" width="200" alt=""></div>
+                                        <img src="images/rita_base.jpg" width="200" alt="">
                                     </div>
                                     <script type="text/javascript">
                                         function rita_start() { document.getElementById('rita_image').style.opacity = "1"; }
                                         function rita_stop() { document.getElementById('rita_image').style.opacity = "0"; }
-                                        rita_stop()
+                                        rita_stop();
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
-                                    <a href="#"><span class="papertitle">Uncertainty-Aware Time-To-Collision Prediction Using Convolutional LSTM Networks</span></a><br>
-                                    <strong>Minwoo Kim</strong>, Jongyun Kim, Hyondong Oh<br>
-                                    <em>International Conference on Robot Intelligence Technology and Applications (RITA)</em>, 2021<br>
+                                    <a href="https://koasas.kaist.ac.kr/handle/10203/336100" target="_blank">
+                                        <span class="papertitle">Uncertainty-Aware Time-To-Collision Prediction Using Convolutional Long-Short-Term Memory Networks</span>
+                                    </a><br>
+                                    <strong>Minwoo Kim</strong>, Pawel Ladosz, Hyondong Oh<br>
+                                    <em>International Conference on Robot Intelligence Technology and Applications (RiTA)</em>, 2021<br>
                                     <font color="red"><strong>Best Intelligent Paper Award</strong></font><br>
-                                    <a href="#">paper</a> / <a href="#">video</a>
+                                    <a href="https://koasas.kaist.ac.kr/handle/10203/336100" target="_blank">paper</a>
                                 </td>
-                            </tr>                            
+                            </tr>
+
+                            <tr onmouseout="icros_stop()" onmouseover="icros_start()">
+                                <td style="padding:16px;width:30%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id="icros_image"><img src="images/icros_hover.jpg" width="200" alt=""></div>
+                                        <img src="images/icros_base.jpg" width="200" alt="">
+                                    </div>
+                                    <script type="text/javascript">
+                                        function icros_start() { document.getElementById('icros_image').style.opacity = "1"; }
+                                        function icros_stop() { document.getElementById('icros_image').style.opacity = "0"; }
+                                        icros_stop();
+                                    </script>
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="https://doi.org/10.5302/J.ICROS.2020.20.0014" target="_blank">
+                                        <span class="papertitle">Collision avoidance for a small drone with a monocular camera using deep reinforcement learning in an indoor environment</span>
+                                    </a><br>
+                                    <strong>Minwoo Kim</strong>, Jongyun Kim, Minjae Jung, Hyondong Oh<br>
+                                    <em>Journal of Institute of Control, Robotics and Systems</em>, 2020<br>
+                                    <a href="https://doi.org/10.5302/J.ICROS.2020.20.0014" target="_blank">paper</a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
 
@@ -230,7 +289,7 @@
                             </tr>
                             <tr>
                                 <td style="padding:16px;width:30%;vertical-align:middle; text-align:center;">
-                                    <img src='images/samsung_logo.png' width="200" style="max-height:80px; object-fit: contain;">
+                                    <img src="images/samsung_logo.png" width="200" style="max-height:80px; object-fit: contain;" alt="Samsung Research">
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
                                     <p><strong>Staff Engineer</strong>, Samsung Research (Robot Intelligence Team) | 02/2025 - Present</p>
@@ -241,7 +300,7 @@
                             </tr>
                             <tr>
                                 <td style="padding:16px;width:30%;vertical-align:middle; text-align:center;">
-                                    <img src='images/unist_logo.png' width="200" style="max-height:80px; object-fit: contain;">
+                                    <img src="images/unist_logo.png" width="200" style="max-height:80px; object-fit: contain;" alt="UNIST">
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
                                     <p><strong>Graduate Researcher</strong>, Autonomous Systems Lab (ASL), UNIST | 03/2019 - 02/2025</p>
@@ -264,13 +323,13 @@
                             <tr onmouseout="proj_nrf_stop()" onmouseover="proj_nrf_start()">
                                 <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='proj_nrf_image'><img src='images/proj_nrf_hover.gif' width="200"></div>
-                                        <img src='images/proj_nrf_base.jpg' width="200">
+                                        <div class="two" id="proj_nrf_image"><img src="images/proj_nrf_hover.gif" width="200" alt=""></div>
+                                        <img src="images/proj_nrf_base.jpg" width="200" alt="">
                                     </div>
                                     <script type="text/javascript">
                                         function proj_nrf_start() { document.getElementById('proj_nrf_image').style.opacity = "1"; }
                                         function proj_nrf_stop() { document.getElementById('proj_nrf_image').style.opacity = "0"; }
-                                        proj_nrf_stop()
+                                        proj_nrf_stop();
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
@@ -282,17 +341,17 @@
                             <tr onmouseout="proj_kari_stop()" onmouseover="proj_kari_start()">
                                 <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='proj_kari_image'><img src='images/proj_kari_hover.gif' width="200"></div>
-                                        <img src='images/proj_kari_base.jpg' width="200">
+                                        <div class="two" id="proj_kari_image"><img src="images/proj_kari_hover.gif" width="200" alt=""></div>
+                                        <img src="images/proj_kari_base.jpg" width="200" alt="">
                                     </div>
                                     <script type="text/javascript">
                                         function proj_kari_start() { document.getElementById('proj_kari_image').style.opacity = "1"; }
                                         function proj_kari_stop() { document.getElementById('proj_kari_image').style.opacity = "0"; }
-                                        proj_kari_stop()
+                                        proj_kari_stop();
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
-                                    <span class="papertitle">Advanced Vehicle Autonomy & Intelligence Technology Development for Unmanned Vehicles</span><br>
+                                    <span class="papertitle">Advanced Vehicle Autonomy &amp; Intelligence Technology Development for Unmanned Vehicles</span><br>
                                     Funded by Korea Aerospace Research Institute (KARI) | 06/2020 - Present
                                 </td>
                             </tr>
@@ -300,13 +359,13 @@
                             <tr onmouseout="proj_crane_stop()" onmouseover="proj_crane_start()">
                                 <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='proj_crane_image'><img src='images/proj_crane_hover.gif' width="200"></div>
-                                        <img src='images/proj_crane_base.jpg' width="200">
+                                        <div class="two" id="proj_crane_image"><img src="images/proj_crane_hover.gif" width="200" alt=""></div>
+                                        <img src="images/proj_crane_base.jpg" width="200" alt="">
                                     </div>
                                     <script type="text/javascript">
                                         function proj_crane_start() { document.getElementById('proj_crane_image').style.opacity = "1"; }
                                         function proj_crane_stop() { document.getElementById('proj_crane_image').style.opacity = "0"; }
-                                        proj_crane_stop()
+                                        proj_crane_stop();
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
@@ -318,13 +377,13 @@
                             <tr onmouseout="proj_add_land_stop()" onmouseover="proj_add_land_start()">
                                 <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='proj_add_land_image'><img src='images/proj_add_land_hover.gif' width="200"></div>
-                                        <img src='images/proj_add_land_base.jpg' width="200">
+                                        <div class="two" id="proj_add_land_image"><img src="images/proj_add_land_hover.gif" width="200" alt=""></div>
+                                        <img src="images/proj_add_land_base.jpg" width="200" alt="">
                                     </div>
                                     <script type="text/javascript">
                                         function proj_add_land_start() { document.getElementById('proj_add_land_image').style.opacity = "1"; }
                                         function proj_add_land_stop() { document.getElementById('proj_add_land_image').style.opacity = "0"; }
-                                        proj_add_land_stop()
+                                        proj_add_land_stop();
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
@@ -336,13 +395,13 @@
                             <tr onmouseout="proj_etri_stop()" onmouseover="proj_etri_start()">
                                 <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='proj_etri_image'><img src='images/proj_etri_hover.gif' width="200"></div>
-                                        <img src='images/proj_etri_base.jpg' width="200">
+                                        <div class="two" id="proj_etri_image"><img src="images/proj_etri_hover.gif" width="200" alt=""></div>
+                                        <img src="images/proj_etri_base.jpg" width="200" alt="">
                                     </div>
                                     <script type="text/javascript">
                                         function proj_etri_start() { document.getElementById('proj_etri_image').style.opacity = "1"; }
                                         function proj_etri_stop() { document.getElementById('proj_etri_image').style.opacity = "0"; }
-                                        proj_etri_stop()
+                                        proj_etri_stop();
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
@@ -354,13 +413,13 @@
                             <tr onmouseout="proj_add_missile_stop()" onmouseover="proj_add_missile_start()">
                                 <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='proj_add_missile_image'><img src='images/proj_add_missile_hover.gif' width="200"></div>
-                                        <img src='images/proj_add_missile_base.jpg' width="200">
+                                        <div class="two" id="proj_add_missile_image"><img src="images/proj_add_missile_hover.gif" width="200" alt=""></div>
+                                        <img src="images/proj_add_missile_base.jpg" width="200" alt="">
                                     </div>
                                     <script type="text/javascript">
                                         function proj_add_missile_start() { document.getElementById('proj_add_missile_image').style.opacity = "1"; }
                                         function proj_add_missile_stop() { document.getElementById('proj_add_missile_image').style.opacity = "0"; }
-                                        proj_add_missile_stop()
+                                        proj_add_missile_stop();
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
