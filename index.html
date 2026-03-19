@@ -6,6 +6,12 @@
     <meta name="author" content="Minwoo Kim">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+        video.hover-media {
+            display: none; /* 기본적으로는 숨김 */
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,7 +28,7 @@
                                     <p>
                                         I'm a <strong>Staff Engineer</strong> at <a href="https://research.samsung.com/">Samsung Research</a> in the Robot Intelligence Team. 
                                         My core expertise is rooted in vision-based navigation, reinforcement learning, and inverse reinforcement learning for autonomous mobile robots and UAVs. 
-                                        Currently, I am actively engaged in pioneering research on <strong>Vision-Language-Action (VLA)</strong> models for real robot manipulation via <strong> Reinforcement Learning </strong>.
+                                        Currently, I am actively engaged in pioneering research on <strong>Vision-Language-Action (VLA)</strong> models for real robot manipulation.
                                     </p>
                                     <p style="text-align:center">
                                         <a href="mailto:mwoo.kim@samsung.com">Email</a> &nbsp;/&nbsp;
@@ -34,7 +40,7 @@
                                 </td>
                                 <td style="padding:2.5%;width:37%;max-width:37%">
                                     <a href="images/id_image1.jpg">
-                                        <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/id_image1.jpg" class="hoverZoomLink">
+                                        <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 0px;" alt="profile photo" src="images/id_image1.jpg" class="hoverZoomLink">
                                     </a>
                                 </td>
                             </tr>
@@ -73,7 +79,6 @@
                                     Woojae Shin, <strong>Minwoo Kim</strong>, Taewook Park, Geunsik Bae, Seunghwan Kim, Hyondong Oh<br>
                                     <em>IEEE Robotics Automation Letters (RAL)</em>, 2026<br>
                                     <a href="#">project page</a> / <a href="#">arXiv</a> / <a href="#">video</a>
-                                    <p>A robust deep reinforcement learning framework enabling autonomous drones to land safely on moving platforms exhibiting unpredictable motions.</p>
                                 </td>
                             </tr>
 
@@ -94,7 +99,6 @@
                                     <strong>Minwoo Kim</strong>, Geunsik Bae, Jinwoo Lee, Woojae Shin, Changseung Kim, Myongyol Choi, Heejung Shin, Hyongdong Oh<br>
                                     <em>Robotics Science and Systems (RSS)</em>, 2025<br>
                                     <a href="#">project page</a> / <a href="#">arXiv</a> / <a href="#">code</a>
-                                    <p>An agile and robust planner utilizing inverse reinforcement learning to achieve highly reliable vision-based navigation for drones.</p>
                                 </td>
                             </tr>
 
@@ -115,99 +119,134 @@
                                     <strong>Minwoo Kim</strong>, Jongyun Kim, Minjae Jung, Hyondong Oh<br>
                                     <em>Expert Systems with Applications</em>, 2022<br>
                                     <a href="#">paper</a> / <a href="#">code</a>
-                                    <p>A comprehensive approach bridging the gap toward fully autonomous flight using only a single monocular camera guided by deep reinforcement learning.</p>
-                                </td>
-                            </tr>
-
-                            <tr onmouseout="rita_stop()" onmouseover="rita_start()">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
-                                    <div class="one">
-                                        <div class="two" id='rita_image'><img src='images/rita_hover.jpg' width=100%></div>
-                                        <img src='images/rita_base.jpg' width=100%>
-                                    </div>
-                                    <script type="text/javascript">
-                                        function rita_start() { document.getElementById('rita_image').style.opacity = "1"; }
-                                        function rita_stop() { document.getElementById('rita_image').style.opacity = "0"; }
-                                        rita_stop()
-                                    </script>
-                                </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
-                                    <a href="#"><span class="papertitle">Uncertainty-Aware Time-To-Collision Prediction Using Convolutional LSTM Networks</span></a><br>
-                                    <strong>Minwoo Kim</strong>, Jongyun Kim, Hyondong Oh<br>
-                                    <em>International Conference on Robot Intelligence Technology and Applications (RITA)</em>, 2021<br>
-                                    <font color="red"><strong>Best Intelligent Paper Award</strong></font><br>
-                                    <a href="#">video</a>
-                                    <p>A spatio-temporal prediction model for collision avoidance that explicitly estimates predictive uncertainty using ConvLSTM.</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
 
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
                             <tr>
-                                <td style="padding:16px;width:100%;vertical-align:middle">
+                                <td colspan="2" style="padding:16px;width:100%;vertical-align:middle">
                                     <h2>Job Experience</h2>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="padding:8px 16px;width:100%;vertical-align:top">
+                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                    <img src='images/samsung_logo.png' style="width:100%; max-height:80px; object-fit: contain;">
+                                </td>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
                                     <p><strong>Staff Engineer</strong>, Samsung Research (Robot Intelligence Team) | 02/2025 - Present</p>
                                     <ul>
-                                        <li>Leading research on Vision-Language-Action (VLA) models for multi-modal robot manipulation.</li>
+                                        <li>Hierarchical Vision-Language-Action (VLA) models for real robot manipulation.</li>
                                     </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                    <img src='images/unist_logo.png' style="width:100%; max-height:80px; object-fit: contain;">
+                                </td>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
                                     <p><strong>Graduate Researcher</strong>, Autonomous Systems Lab (ASL), UNIST | 03/2019 - 02/2025</p>
                                     <ul>
-                                        <li>Conducted research on learning-based visual navigation and drone landing for multiple national and industrial projects.</li>
+                                        <li>Focus: Learning-based visual navigation, drone landing on moving platforms.</li>
                                     </ul>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
 
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                    <table style="width:100%;border:0px;border-spacing:0px 15px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
                             <tr>
-                                <td align="right" style="padding:16px;width:20%;vertical-align:top"><h3>Education</h3></td>
-                                <td style="padding:8px;width:80%;vertical-align:top">
-                                    <p><strong>Combined Master's and Ph.D., Mechanical and Aerospace Engineering</strong><br>
-                                    <em>UNIST</em> | 2019 - 2025<br>
-                                    Thesis: <em>Learning-Based Visual Navigation for Drones: Generalization, Sample-Efficiency and Sim-to-Real Gap</em></p>
-                                    <p><strong>Bachelor's, Mechanical Engineering & Business Management</strong><br>
-                                    <em>UNIST</em> | 2014 - 2019 | <font color="blue">Magna cum laude</font></p>
+                                <td colspan="2" style="padding:16px;width:100%;vertical-align:middle">
+                                    <h2>Projects</h2>
                                 </td>
                             </tr>
-                        </tbody>
-                    </table>
 
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td align="right" style="padding:16px;width:20%;vertical-align:top"><h3>Projects</h3></td>
-                                <td style="padding:8px;width:80%;vertical-align:top">
-                                    <ul style="padding-left: 20px;">
-                                        <li>Vision-Based Fast, Highly Reliable, and Agile Autonomous Drone Flight Using Deep Learning Approaches (NRF)</li>
-                                        <li>Advanced Vehicle Autonomy & Intelligence Technology Development for Unmanned Vehicles (KARI)</li>
-                                        <li>Smart Crane Object Detection System (HD Hyundai Heavy Industry)</li>
-                                        <li>State Estimation of a Moving Vehicle and Test Environment Development for Vision-Based Autonomous Landing of the UAV (ADD)</li>
-                                        <li>Virtual Workload Acceleration for Verification of Heterogeneous HW-Based Safety-Critical SW Platform (ETRI)</li>
-                                        <li>Research on Conflict-Free Methods between Guided Missiles Against Multiple Low-Altitude Rocket Targets (ADD)</li>
-                                    </ul>
+                            <tr onmouseout="proj_nrf_stop()" onmouseover="proj_nrf_start()">
+                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='proj_nrf_image'><img src='images/proj_nrf_hover.gif' width=100%></div>
+                                        <img src='images/proj_nrf_base.jpg' width=100%>
+                                    </div>
+                                    <script type="text/javascript">
+                                        function proj_nrf_start() { document.getElementById('proj_nrf_image').style.opacity = "1"; }
+                                        function proj_nrf_stop() { document.getElementById('proj_nrf_image').style.opacity = "0"; }
+                                        proj_nrf_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <span class="papertitle">Vision-Based Fast, Highly Reliable, and Agile Autonomous Drone Flight Using Deep Learning Approaches</span><br>
+                                    Funded by National Research Fund (NRF) | 2023 - Present
+                                    <p>Research on robust DRL for high-speed drone navigation in cluttered environments.</p>
                                 </td>
                             </tr>
-                        </tbody>
-                    </table>
 
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td align="right" style="padding:16px;width:20%;vertical-align:top"><h3>Awards</h3></td>
-                                <td style="padding:8px;width:80%;vertical-align:top">
-                                    <p><strong>Best Intelligent Paper Award</strong>, RITA 2021</p>
-                                    <p><strong>Gold Prize, Ulsan-Challenge Festival</strong>, UNIST 2021</p>
-                                    <p><strong>Grand Prize, AI Competition for Space Weather Disaster Prediction</strong>, MSIT 2019</p>
+                            <tr onmouseout="proj_kari_stop()" onmouseover="proj_kari_start()">
+                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='proj_kari_image'><img src='images/proj_kari_hover.gif' width=100%></div>
+                                        <img src='images/proj_kari_base.jpg' width=100%>
+                                    </div>
+                                    <script type="text/javascript">
+                                        function proj_kari_start() { document.getElementById('proj_kari_image').style.opacity = "1"; }
+                                        function proj_kari_stop() { document.getElementById('proj_kari_image').style.opacity = "0"; }
+                                        proj_kari_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <span class="papertitle">Advanced Vehicle Autonomy & Intelligence Technology Development for Unmanned Vehicles</span><br>
+                                    Funded by Korea Aerospace Research Institute (KARI) | 2020 - Present
+                                    <p>Developing core autonomy for advanced unmanned systems and UAVs.</p>
                                 </td>
                             </tr>
+
+                            <tr onmouseout="proj_add_land_stop()" onmouseover="proj_add_land_start()">
+                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='proj_add_land_media'>
+                                            <img src='images/proj_add_land_hover.gif' width=100%>
+                                        </div>
+                                        <img src='images/proj_add_land_base.jpg' width=100%>
+                                    </div>
+                                    <script type="text/javascript">
+                                        function proj_add_land_start() { 
+                                            document.getElementById('proj_add_land_media').style.opacity = "1";
+                                            // 비디오라면 여기서 play()를 호출할 수 있습니다.
+                                        }
+                                        function proj_add_land_stop() { 
+                                            document.getElementById('proj_add_land_media').style.opacity = "0"; 
+                                        }
+                                        proj_add_land_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <span class="papertitle">State Estimation of a Moving Vehicle and Test Environment Development for Vision-Based Autonomous Landing of the UAV</span><br>
+                                    Funded by Agency for Defense Development (ADD) | 2021 - 2023
+                                    <p>Sim-to-real gap reduction for precise drone landing on moving, uncertain targets.</p>
+                                </td>
+                            </tr>
+
+                            <tr onmouseout="proj_crane_stop()" onmouseover="proj_crane_start()">
+                                <td style="padding:16px;width:20%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='proj_crane_image'><img src='images/proj_crane_hover.gif' width=100%></div>
+                                        <img src='images/proj_crane_base.jpg' width=100%>
+                                    </div>
+                                    <script type="text/javascript">
+                                        function proj_crane_start() { document.getElementById('proj_crane_image').style.opacity = "1"; }
+                                        function proj_crane_stop() { document.getElementById('proj_crane_image').style.opacity = "0"; }
+                                        proj_crane_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:8px;width:80%;vertical-align:middle">
+                                    <span class="papertitle">Smart Crane Object Detection System</span><br>
+                                    Funded by HD Hyundai Heavy Industry | 2023 - 2024
+                                    <p>Computer vision for safety-critical object detection in industrial heavy crane operations.</p>
+                                </td>
+                            </tr>
+
                         </tbody>
                     </table>
 
