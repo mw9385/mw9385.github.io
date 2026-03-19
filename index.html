@@ -13,6 +13,7 @@
         <tbody>
             <tr style="padding:0px">
                 <td style="padding:0px">
+                    
                     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
                             <tr style="padding:0px">
@@ -20,18 +21,21 @@
                                     <p class="name" style="text-align: center;">Minwoo Kim, Ph.D.</p>
                                     <p>
                                         I'm a <strong>Staff Engineer</strong> at <a href="https://research.samsung.com/">Samsung Research</a> in the Robot Intelligence Team. 
-                                        My expertise lies in vision-based navigation, reinforcement learning, and inverse reinforcement learning.
-                                        Currently, I am leading research on <strong>Vision-Language-Action (VLA)</strong> models for agile robot manipulation.
+                                        My core expertise is rooted in vision-based navigation, reinforcement learning, and inverse reinforcement learning for autonomous mobile robots and UAVs. 
+                                        Currently, I am actively engaged in pioneering research on <strong>Vision-Language-Action (VLA)</strong> models for real robot manipulation.
                                     </p>
                                     <p style="text-align:center">
                                         <a href="mailto:mwoo.kim@samsung.com">Email</a> &nbsp;/&nbsp;
                                         <a href="data/CV.pdf">CV</a> &nbsp;/&nbsp;
+                                        <a href="https://fair.kaist.ac.kr/">Website</a> &nbsp;/&nbsp;
                                         <a href="https://github.com/mw9385">Github</a> &nbsp;/&nbsp;
                                         <a href="https://www.linkedin.com/in/minwoo-kim-4a2468208/">LinkedIn</a>
                                     </p>
                                 </td>
                                 <td style="padding:2.5%;width:37%;max-width:37%">
-                                    <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/id_image1.jpg">
+                                    <a href="images/id_image1.jpg">
+                                        <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/id_image1.jpg" class="hoverZoomLink">
+                                    </a>
                                 </td>
                             </tr>
                         </tbody>
@@ -42,7 +46,9 @@
                             <tr>
                                 <td style="padding:16px;width:100%;vertical-align:middle">
                                     <h2>Research</h2>
-                                    <p>Focus: Deep RL, VLA Models, Inverse RL, and Robust Navigation for UAVs/Robots.</p>
+                                    <p>
+                                        My research focuses on developing robust and agile autonomous systems. I am particularly interested in deep reinforcement learning, Vision-Language-Action (VLA) models, and vision-based navigation for drones and precise robotic manipulation.
+                                    </p>
                                 </td>
                             </tr>
                         </tbody>
@@ -63,9 +69,11 @@
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:80%;vertical-align:middle">
-                                    <span class="papertitle">Vision-Based Autonomous Drone Landing on Moving Platforms via DRL</span><br>
-                                    <em>IEEE RAL</em>, 2026 <br>
-                                    <a href="#">project page</a> / <a href="#">arXiv</a>
+                                    <a href="#"><span class="papertitle">Vision-Based Autonomous Drone Landing on Moving Platforms With Uncertain Motion via Deep Reinforcement Learning</span></a><br>
+                                    Woojae Shin, <strong>Minwoo Kim</strong>, Taewook Park, Geunsik Bae, Seunghwan Kim, Hyondong Oh<br>
+                                    <em>IEEE Robotics Automation Letters (RAL)</em>, 2026<br>
+                                    <a href="#">project page</a> / <a href="#">arXiv</a> / <a href="#">video</a>
+                                    <p>A robust deep reinforcement learning framework enabling autonomous drones to land safely on moving platforms exhibiting unpredictable motions.</p>
                                 </td>
                             </tr>
 
@@ -82,93 +90,5 @@
                                     </script>
                                 </td>
                                 <td style="padding:8px;width:80%;vertical-align:middle">
-                                    <span class="papertitle">RAPID: Robust and Agile Planner Using IRL for Drone Navigation</span><br>
-                                    <em>RSS</em>, 2025 <br>
-                                    <a href="#">arXiv</a> / <a href="#">code</a>
-                                </td>
-                            </tr>
-
-                            <tr onmouseout="flight_stop()" onmouseover="flight_start()">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
-                                    <div class="one">
-                                        <div class="two" id='flight_image'><img src='images/flight_hover.jpg' width=100%></div>
-                                        <img src='images/flight_base.jpg' width=100%>
-                                    </div>
-                                    <script type="text/javascript">
-                                        function flight_start() { document.getElementById('flight_image').style.opacity = "1"; }
-                                        function flight_stop() { document.getElementById('flight_image').style.opacity = "0"; }
-                                        flight_stop()
-                                    </script>
-                                </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
-                                    <span class="papertitle">Towards Monocular Vision-Based Autonomous Flight via DRL</span><br>
-                                    <em>Expert Systems with Applications</em>, 2022 <br>
-                                    <a href="#">paper</a>
-                                </td>
-                            </tr>
-
-                            <tr onmouseout="rita_stop()" onmouseover="rita_start()">
-                                <td style="padding:16px;width:20%;vertical-align:middle">
-                                    <div class="one">
-                                        <div class="two" id='rita_image'><img src='images/rita_hover.jpg' width=100%></div>
-                                        <img src='images/rita_base.jpg' width=100%>
-                                    </div>
-                                    <script type="text/javascript">
-                                        function rita_start() { document.getElementById('rita_image').style.opacity = "1"; }
-                                        function rita_stop() { document.getElementById('rita_image').style.opacity = "0"; }
-                                        rita_stop()
-                                    </script>
-                                </td>
-                                <td style="padding:8px;width:80%;vertical-align:middle">
-                                    <span class="papertitle">Uncertainty-Aware TTC Prediction Using ConvLSTM</span><br>
-                                    <em>RITA</em>, 2021 | <font color="red"><strong>Best Intelligent Paper Award</strong></font><br>
-                                    <a href="#">video</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:16px;width:100%;vertical-align:middle">
-                                    <h2>Job Experience</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding:8px 16px;width:100%;vertical-align:top">
-                                    <p><strong>Staff Engineer</strong>, Samsung Research | 02/2025 - Present</p>
-                                    <ul>
-                                        <li>Robot Intelligence Team: Researching Vision-Language-Action (VLA) models for multi-modal robot manipulation.</li>
-                                    </ul>
-                                    <p><strong>Graduate Researcher</strong>, UNIST (ASL Lab) | 03/2019 - 02/2025</p>
-                                    <ul>
-                                        <li>Developed robust DRL frameworks for drone navigation and autonomous landing projects funded by NRF, KARI, and ADD.</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:16px;width:100%;vertical-align:middle">
-                                    <h2>Education</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding:8px 16px;width:100%;vertical-align:top">
-                                    <p><strong>Combined M.S. and Ph.D.</strong>, Mechanical and Aerospace Engineering, UNIST (2025)</p>
-                                    <p><strong>B.S.</strong>, Mechanical Engineering, UNIST (2019) | <font color="blue">Magna cum laude</font></p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-</html>
+                                    <a href="#"><span class="papertitle">RAPID: Robust and Agile Planner Using Inverse Reinforcement Learning for Vision-Based Drone Navigation</span></a><br>
+                                    <strong>Minwoo Kim</strong>,
