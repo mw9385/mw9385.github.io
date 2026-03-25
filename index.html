@@ -23,6 +23,34 @@
         .papertitle {
             font-weight: bold;
         }
+        .badge-prep {
+            display: inline-block;
+            background-color: #e8f4fd;
+            color: #1a6fa3;
+            border: 1px solid #b3d9f5;
+            border-radius: 4px;
+            font-size: 0.78em;
+            font-weight: bold;
+            padding: 1px 7px;
+            margin-left: 6px;
+            vertical-align: middle;
+            letter-spacing: 0.03em;
+        }
+        .placeholder-img {
+            width: 200px;
+            height: 140px;
+            background: linear-gradient(135deg, #e8f0fe 0%, #d2e3fc 100%);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #5a8dee;
+            font-size: 0.78em;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            line-height: 1.4;
+        }
     </style>
 </head>
 
@@ -74,6 +102,25 @@
 
                     <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
+
+                            <!-- NEW PAPER: Under Preparation -->
+                            <tr bgcolor="#ffffd0">
+                                <td style="padding:16px;width:30%;vertical-align:middle">
+                                    <div class="placeholder-img">
+                                        Diffusion Policy<br>Online Adaptation<br>&#128736;
+                                    </div>
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <span class="papertitle">Stable Online Adaptation of Diffusion Policies via Latent-Regularized Steering and Periodic Resetting</span>
+                                    <span class="badge-prep">Under Preparation</span><br>
+                                    <strong>Minwoo Kim</strong>, Taehan Kim, Wonhyuk Choi, Jihwan Kim<br>
+                                    <em>Samsung Research</em><br>
+                                    <span style="font-size:0.9em; color:#555;">
+                                        We propose LRDS, an online RL framework for stable fine-tuning of pretrained diffusion policies in long-horizon, high-precision manipulation. LRDS introduces Gaussian-space regularization with DCT-based noise parameterization, a periodic resetting mechanism, and a distributional critic for bimodal value landscapes. Evaluated on a 44-DoF real-world robot, LRDS achieves 90% task success from 40% within one hour of training.
+                                    </span>
+                                </td>
+                            </tr>
+
                             <tr onmouseout="landing_stop()" onmouseover="landing_start()">
                                 <td style="padding:16px;width:30%;vertical-align:middle">
                                     <div class="one">
