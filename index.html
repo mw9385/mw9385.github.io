@@ -51,6 +51,22 @@
             box-sizing: border-box;
             line-height: 1.4;
         }
+        .jobgroup {
+            font-weight: bold;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+        .jobgroup:first-of-type {
+            margin-top: 6px;
+        }
+        .joblist {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+        .joblist li {
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 
@@ -119,7 +135,7 @@
                                     <strong>Minwoo Kim</strong>, Taehan Kim, Wonhyuk Choi, Jihwan Kim<br>
                                     <em>Samsung Research</em><br>
                                     <span style="font-size:0.9em; color:#555;">
-                                        We propose LRDS, an online RL framework for stable fine-tuning of pretrained diffusion policies in long-horizon, high-precision manipulation. LRDS introduces Gaussian-space regularization with DCT-based noise parameterization, a periodic resetting mechanism, and a distributional critic for bimodal value landscapes. Evaluated on a 44-DoF real-world robot, LRDS achieves 90% task success from 40% within one hour of training.
+                                        We propose LRDS, an online RL framework for stable fine-tuning of pretrained diffusion policies in long-horizon, high-precision manipulation. LRDS introduces Gaussian-space regularization with DCT-based noise parameterization, a periodic resetting mechanism, and a distributional critic for bimodal value landscapes. Evaluated on a 44-DoF real-world robot with a fine-tuned &pi;<sub>0.5</sub> policy, LRDS raises task success from 40% to 90% (18/20 trials) within one hour of online training.
                                     </span>
                                 </td>
                             </tr>
@@ -287,12 +303,45 @@
                                 </td>
                                 <td style="padding:8px;width:70%;vertical-align:middle">
                                     <p><strong>Staff Engineer</strong>, Samsung Research (Robot Intelligence Team) | 04/2025 - Present</p>
-                                    <ul>
-                                        <li>Developed vision-language-action model training and RL performance enhancement for unstructured manufacturing automation.</li>
-                                        <li>Built foundation models for unstructured precision tasks using large-scale data.</li>
-                                        <li>Developed RL methods for fast real-world performance improvement with short training budgets.</li>
-                                        <li>Designed RL-based precise in-hand manipulation control algorithms.</li>
-                                        <li>Led planning and execution of VLA+RL projects: simulation feasibility, real-world deployment, data acquisition, pipeline design.</li>
+                                    <p style="font-size:0.95em;">
+                                        Research centers on <strong>sample-efficient online reinforcement learning</strong> for real-world robot manipulation and on <strong>integrating RL with Vision-Language-Action (VLA) models</strong> &mdash; algorithms that reach deployable performance within short real-world interaction budgets. Led planning and execution of VLA+RL projects end to end: simulation feasibility, real-world deployment, data acquisition, and pipeline design.
+                                    </p>
+
+                                    <p class="jobgroup">Online RL for Precision Manipulation (Human-in-the-Loop)</p>
+                                    <ul class="joblist">
+                                        <li>Built human-intervention-based online RL pipelines for contact-rich, tight-tolerance insertion on real hardware, integrating <strong>offline RL pretraining, warm-start RL, and human intervention</strong> to compress the online interaction budget.</li>
+                                        <li><strong>Cable insertion</strong> (multi peg-in-hole) &mdash; <strong>100% success (20/20) within 40 minutes</strong> of online training; evaluated post-training under active physical disturbance, with an operator pushing and displacing the arm mid-execution.</li>
+                                        <li><strong>Water hose insertion</strong> (elastic, deformable object) &mdash; same methodology, <strong>100% success (20/20) within 40 minutes</strong> of online training.</li>
+                                    </ul>
+
+                                    <p class="jobgroup">VLA + RL Integration</p>
+                                    <ul class="joblist">
+                                        <li><strong>LRDS (Latent-Regularized Diffusion Steering)</strong> &mdash; RL-guided selection of the initial diffusion noise in a VLA action head, steering sampling toward high-value actions; Gaussian-space regularization under DCT-based noise parameterization, periodic resetting, and a distributional critic for bimodal value landscapes. Deployed on a <strong>44-DoF humanoid</strong> across two long-horizon precision tasks &mdash; picking up a cylinder and inserting it into a hole, and removing a cylinder from a hole and inserting it into a slot. A fine-tuned <strong>&pi;<sub>0.5</sub></strong> policy improved from <strong>40% to 90% success (18/20) within one hour</strong> of online fine-tuning.</li>
+                                        <li><strong>Residual RL</strong> &mdash; an RL policy learns a corrective residual on top of VLA action output.</li>
+                                        <li><strong>Anchored action generation</strong> &mdash; RL generates actions constrained to remain anchored to the VLA action prior.</li>
+                                        <li><strong>Q-arbitration</strong> &mdash; distributional (C51) critic with V-GPS-style Q-function arbitration between VLA and RL actions, plus episode-level mode rotation to close distributional coverage gaps.</li>
+                                        <li><strong>Online dataset aggregation</strong> &mdash; improving pretrained VLA performance through online rollout with human intervention, aggregating on-policy corrective data on real hardware.</li>
+                                    </ul>
+
+                                    <p class="jobgroup">Tactile-Driven Dexterous Manipulation</p>
+                                    <ul class="joblist">
+                                        <li>Zero-shot sim-to-real transfer of tactile-conditioned RL policies to real hardware, enabling tasks infeasible under conventional teleoperation (e.g., <strong>bottle-cap opening</strong>).</li>
+                                        <li><strong>RMA (Rapid Motor Adaptation)</strong>-based in-hand object rotation policy trained across diverse objects for robustness under object-property variation.</li>
+                                        <li>Extensive reward function design and ablation for tactile-conditioned policy learning.</li>
+                                        <li>Developing a <strong>unified VLA architecture that ingests tactile sensing</strong>.</li>
+                                    </ul>
+
+                                    <p class="jobgroup">VLA Model Development</p>
+                                    <ul class="joblist">
+                                        <li>Building manipulation VLA models on <strong>&pi;-series (&pi;<sub>0.5</sub>)</strong> and <strong>GR00T</strong> bases: VLM backbone augmented with separate action experts specialized for arm and high-DoF hand control.</li>
+                                        <li>Target platform: <strong>Rainbow Robotics RBY-1 + Sharpa Hand (21 DoF)</strong>, specialized for dexterous tasks such as card swiping and sticky-note picking.</li>
+                                        <li>Built foundation models for unstructured precision manufacturing tasks using large-scale demonstration data.</li>
+                                    </ul>
+
+                                    <p class="jobgroup">Platforms &amp; Tooling</p>
+                                    <ul class="joblist">
+                                        <li>Robots: Rainbow Robotics RBY-1, Franka, 44-DoF humanoid. Hands: Sharpa Hand (21 DoF), RobotEra XHand.</li>
+                                        <li>Simulation: Isaac Gym / Isaac Lab, humanoid manipulation benchmark suites, LIBERO, robosuite (DexMimicGen).</li>
                                     </ul>
                                 </td>
                             </tr>
