@@ -51,21 +51,34 @@
             box-sizing: border-box;
             line-height: 1.4;
         }
-        .jobgroup {
-            font-weight: bold;
-            margin-top: 14px;
-            margin-bottom: 4px;
+
+        /* --- Job experience: role line --- */
+        .jobtitle {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 1.02em;
         }
-        .jobgroup:first-of-type {
-            margin-top: 6px;
+        .jobdate {
+            color: #8a8a8a;
+            font-size: 0.85em;
+            white-space: nowrap;
+            margin-left: 4px;
         }
+
         .joblist {
             margin-top: 0;
             margin-bottom: 0;
-            padding-left: 20px;
+            padding-left: 18px;
         }
         .joblist li {
-            margin-bottom: 5px;
+            margin-bottom: 6px;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        .tooling {
+            font-size: 0.88em;
+            color: #666;
+            margin-top: 2px;
         }
     </style>
 </head>
@@ -103,7 +116,36 @@
                         </tbody>
                     </table>
 
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                    <!-- ============ JOB EXPERIENCE ============ -->
+                    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td colspan="2" style="padding:16px;width:100%;vertical-align:middle">
+                                    <h2>Job Experience</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="padding:0 16px 16px 16px;width:100%;vertical-align:top">
+                                    <p class="jobtitle"><strong>Staff Engineer</strong>, Samsung Research &mdash; Robot Intelligence Team <span class="jobdate">04/2025 &ndash; Present</span></p>
+                                    <p style="font-size:0.95em;">
+                                        <strong>Sample-efficient online reinforcement learning</strong> and <strong>RL&ndash;VLA integration</strong> for real-world robot manipulation, aimed at deployable performance within short real-world interaction budgets. Led VLA+RL projects end to end, from simulation feasibility to real-robot deployment and pipeline design.
+                                    </p>
+                                    <ul class="joblist">
+                                        <li><strong>Human-in-the-loop online RL</strong> for contact-rich, tight-tolerance insertion on real hardware &mdash; cable (multi peg-in-hole) and deformable water hose &mdash; combining offline RL pretraining, warm-start RL, and human intervention.</li>
+                                        <li><strong>RL&ndash;VLA integration</strong>: <strong>LRDS</strong>, RL-guided selection of the initial diffusion noise in a VLA action head <span style="color:#777;">(<a href="#research">paper below</a>)</span>; residual RL on VLA outputs; anchored action generation constrained to the VLA prior; online dataset aggregation with human intervention.</li>
+                                        <li><strong>Tactile-conditioned RL</strong> with zero-shot sim-to-real transfer, enabling tasks infeasible under teleoperation (e.g., bottle-cap opening), and RMA-based in-hand rotation robust to object-property variation; extending to a <strong>unified VLA that ingests tactile sensing</strong>.</li>
+                                        <li><strong>Manipulation VLAs</strong> on <strong>&pi;<sub>0.5</sub></strong> and <strong>GR00T</strong> bases: VLM backbone with separate action experts for arm and high-DoF hand control, targeting <strong>Rainbow Robotics RBY-1 + Sharpa Hand (21 DoF)</strong>.</li>
+                                    </ul>
+                                    <p class="tooling">
+                                        RBY-1, Franka, 44-DoF humanoid &nbsp;&middot;&nbsp; Sharpa Hand (21 DoF), RobotEra XHand &nbsp;&middot;&nbsp; Isaac Gym / Isaac Lab, LIBERO, robosuite (DexMimicGen)
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- ============ RESEARCH ============ -->
+                    <table id="research" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
                             <tr>
                                 <td style="padding:16px;width:100%;vertical-align:middle">
@@ -285,63 +327,6 @@
                                     <strong>Minwoo Kim</strong>, Jongyun Kim, Minjae Jung, Hyondong Oh<br>
                                     <em>Journal of Institute of Control, Robotics and Systems</em>, 2020<br>
                                     <a href="https://doi.org/10.5302/J.ICROS.2020.20.0014" target="_blank">paper</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td colspan="2" style="padding:16px;width:100%;vertical-align:middle">
-                                    <h2>Job Experience</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding:16px;width:30%;vertical-align:middle; text-align:center;">
-                                    <img src="images/samsung.png" width="200" style="max-height:80px; object-fit: contain;" alt="Samsung Research">
-                                </td>
-                                <td style="padding:8px;width:70%;vertical-align:middle">
-                                    <p><strong>Staff Engineer</strong>, Samsung Research (Robot Intelligence Team) | 04/2025 - Present</p>
-                                    <p style="font-size:0.95em;">
-                                        Research centers on <strong>sample-efficient online reinforcement learning</strong> for real-world robot manipulation and on <strong>integrating RL with Vision-Language-Action (VLA) models</strong> &mdash; algorithms that reach deployable performance within short real-world interaction budgets. Led planning and execution of VLA+RL projects end to end: simulation feasibility, real-world deployment, data acquisition, and pipeline design.
-                                    </p>
-
-                                    <p class="jobgroup">Online RL for Precision Manipulation (Human-in-the-Loop)</p>
-                                    <ul class="joblist">
-                                        <li>Built human-intervention-based online RL pipelines for contact-rich, tight-tolerance insertion on real hardware, integrating <strong>offline RL pretraining, warm-start RL, and human intervention</strong> to compress the online interaction budget.</li>
-                                        <li><strong>Cable insertion</strong> (multi peg-in-hole) &mdash; <strong>100% success (20/20) within 40 minutes</strong> of online training; evaluated post-training under active physical disturbance, with an operator pushing and displacing the arm mid-execution.</li>
-                                        <li><strong>Water hose insertion</strong> (elastic, deformable object) &mdash; same methodology, <strong>100% success (20/20) within 40 minutes</strong> of online training.</li>
-                                    </ul>
-
-                                    <p class="jobgroup">VLA + RL Integration</p>
-                                    <ul class="joblist">
-                                        <li><strong>LRDS (Latent-Regularized Diffusion Steering)</strong> &mdash; RL-guided selection of the initial diffusion noise in a VLA action head, steering sampling toward high-value actions; </li>
-                                        <li><strong>Residual RL</strong> &mdash; an RL policy learns a corrective residual on top of VLA action output.</li>
-                                        <li><strong>Anchored action generation</strong> &mdash; RL generates actions constrained to remain anchored to the VLA action prior.</li>                                        
-                                        <li><strong>Online dataset aggregation</strong> &mdash; improving pretrained VLA performance through online rollout with human intervention, aggregating on-policy corrective data on real hardware.</li>
-                                    </ul>
-
-                                    <p class="jobgroup">Tactile-Driven Dexterous Manipulation</p>
-                                    <ul class="joblist">
-                                        <li>Zero-shot sim-to-real transfer of tactile-conditioned RL policies to real hardware, enabling tasks infeasible under conventional teleoperation (e.g., <strong>bottle-cap opening</strong>).</li>
-                                        <li><strong>RMA (Rapid Motor Adaptation)</strong>-based in-hand object rotation policy trained across diverse objects for robustness under object-property variation.</li>
-                                        <li>Extensive reward function design and ablation for tactile-conditioned policy learning.</li>
-                                        <li>Developing a <strong>unified VLA architecture that ingests tactile sensing</strong>.</li>
-                                    </ul>
-
-                                    <p class="jobgroup">VLA Model Development</p>
-                                    <ul class="joblist">
-                                        <li>Building manipulation VLA models on <strong>&pi;-series (&pi;<sub>0.5</sub>)</strong> and <strong>GR00T</strong> bases: VLM backbone augmented with separate action experts specialized for arm and high-DoF hand control.</li>
-                                        <li>Target platform: <strong>Rainbow Robotics RBY-1 + Sharpa Hand (21 DoF)</strong>, specialized for dexterous tasks such as card swiping and sticky-note picking.</li>
-                                        <li>Built foundation models for unstructured precision manufacturing tasks using large-scale demonstration data.</li>
-                                    </ul>
-
-                                    <p class="jobgroup">Platforms &amp; Tooling</p>
-                                    <ul class="joblist">
-                                        <li>Robots: Rainbow Robotics RBY-1, Franka, 44-DoF humanoid. Hands: Sharpa Hand (21 DoF), RobotEra XHand.</li>
-                                        <li>Simulation: Isaac Gym / Isaac Lab, humanoid manipulation benchmark suites, LIBERO, robosuite (DexMimicGen).</li>
-                                    </ul>
                                 </td>
                             </tr>
                         </tbody>
