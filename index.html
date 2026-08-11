@@ -316,10 +316,9 @@
 
                                     <p class="jobgroup">VLA + RL Integration</p>
                                     <ul class="joblist">
-                                        <li><strong>LRDS (Latent-Regularized Diffusion Steering)</strong> &mdash; RL-guided selection of the initial diffusion noise in a VLA action head, steering sampling toward high-value actions; Gaussian-space regularization under DCT-based noise parameterization, periodic resetting, and a distributional critic for bimodal value landscapes. Deployed on a <strong>44-DoF humanoid</strong> across two long-horizon precision tasks &mdash; picking up a cylinder and inserting it into a hole, and removing a cylinder from a hole and inserting it into a slot. A fine-tuned <strong>&pi;<sub>0.5</sub></strong> policy improved from <strong>40% to 90% success (18/20) within one hour</strong> of online fine-tuning.</li>
+                                        <li><strong>LRDS (Latent-Regularized Diffusion Steering)</strong> &mdash; RL-guided selection of the initial diffusion noise in a VLA action head, steering sampling toward high-value actions; </li>
                                         <li><strong>Residual RL</strong> &mdash; an RL policy learns a corrective residual on top of VLA action output.</li>
-                                        <li><strong>Anchored action generation</strong> &mdash; RL generates actions constrained to remain anchored to the VLA action prior.</li>
-                                        <li><strong>Q-arbitration</strong> &mdash; distributional (C51) critic with V-GPS-style Q-function arbitration between VLA and RL actions, plus episode-level mode rotation to close distributional coverage gaps.</li>
+                                        <li><strong>Anchored action generation</strong> &mdash; RL generates actions constrained to remain anchored to the VLA action prior.</li>                                        
                                         <li><strong>Online dataset aggregation</strong> &mdash; improving pretrained VLA performance through online rollout with human intervention, aggregating on-policy corrective data on real hardware.</li>
                                     </ul>
 
